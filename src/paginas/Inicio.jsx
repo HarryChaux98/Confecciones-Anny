@@ -25,15 +25,16 @@ const Inicio = () => {
           <span>👗👚👙</span>
         </section>
       </nav>
-      <b>T</b>enemos para damas, caballeros, niñas y niños hermosos vestidos,
-      trajes de baño, blusas, pantalones, ademas se moldea su prenda de acerdo a
-      la necesidad de nuestros clientes, atentos a mejorar continuamente.
-      <h1></h1>
       <ul>
         <b>A</b>qui en Confecciones Anny podras Comprar, Moldear y Confeccionar
         la prenda que deseas.
       </ul>
-      <></>
+      <h1></h1>
+      <ul>
+        <b>T</b>enemos para damas, caballeros, niñas y niños hermosos vestidos,
+        trajes de baño, blusas, pantalones, ademas se moldea su prenda de acerdo
+        a la necesidad de nuestros clientes, atentos a mejorar continuamente.
+      </ul>
       <div className="grid_container">
         <div className="grid_item">
           <div className="item-text">
@@ -43,6 +44,14 @@ const Inicio = () => {
             </p>
           </div>
           <img src={Img1} alt="" className="item-img"></img>
+          <div className="item-text">
+            <p>
+              - Por tan solo<b> $4.000 COP </b>la unidad.
+            </p>
+            <p>
+              - Oferton<b> $80.000 COP </b>las 24 unidades.
+            </p>
+          </div>
         </div>
         <div className="grid_item">
           <div className="item-text">
@@ -55,29 +64,36 @@ const Inicio = () => {
           <img src={Img2} alt="" className="item-img"></img>
         </div>
         <div className="grid_item">
-        <img src={Img9} alt="" className="item-img"></img>
-        <div className="item-text">
+          <img src={Img9} alt="" className="item-img"></img>
+          <div className="item-text">
             <h3>Traje de Baño para Madre e Hija</h3>
             <p>
-              aqui te confeccionamos el modelo y diseño que gustes, para que compartan momentos agradables juntas.
+              aqui te confeccionamos el modelo y diseño que gustes, para que
+              compartan momentos agradables juntas.
             </p>
           </div>
         </div>
         <div className="grid_item">
-        <img src={Img10} alt="" className="item-img"></img>
-        <div className="item-text">
+          <img src={Img10} alt="" className="item-img"></img>
+          <div className="item-text">
             <h3>Traje de Baño para Damas</h3>
             <p>
-              aqui te confeccionamos el modelo y diseño que gustes con tela de buena calidad por solo $40.000 COP, para que compartan momentos unicos y agradables juntas.
+              aqui te confeccionamos el modelo y diseño que gustes con tela de
+              buena calidad para que compartan momentos unicos y agradables
+              juntas.
+            </p>
+            <p>
+              Por tan solo<b> $40.000 COP</b>.
             </p>
           </div>
         </div>
         <div className="grid_item">
-        <img src={Img11} alt="" className="item-img"></img>
-        <div className="item-text">
+          <img src={Img11} alt="" className="item-img"></img>
+          <div className="item-text">
             <h3>Traje de Baño para Damas</h3>
             <p>
-              aqui te confeccionamos el modelo y diseño que gustes, para que compartan momentos agradables juntas.
+              aqui te confeccionamos el modelo y diseño que gustes, para que
+              compartan momentos agradables juntas.
             </p>
           </div>
         </div>
@@ -91,20 +107,23 @@ const Inicio = () => {
           <img src={Img3} alt="" className="item-img"></img>
         </div>
         <div className="grid_item">
-        <img src={Img4} alt="" className="item-img"></img>
+          <img src={Img4} alt="" className="item-img"></img>
         </div>
         <div className="grid_item">
-        <img src={Img5} alt="" className="item-img"></img>
+          <img src={Img5} alt="" className="item-img"></img>
         </div>
         <div className="grid_item">
-        <img src={Img6} alt="" className="item-img"></img>
+          <img src={Img6} alt="" className="item-img"></img>
         </div>
         <div className="grid_item">
-        <img src={Img7} alt="" className="item-img"></img>
-        <div className="item-text">
+          <img src={Img7} alt="" className="item-img"></img>
+          <div className="item-text">
             <h3>Enterizos para Bebes</h3>
             <p>
-              aqui te confeccionamos el modelo y diseño del vestido que gustes, por solo $40.000 COP
+              aqui te confeccionamos el modelo y diseño del vestido que gustes.
+            </p>
+            <p>
+              Por tan solo<b> $40.000 COP</b>.
             </p>
           </div>
         </div>
@@ -118,25 +137,30 @@ const Inicio = () => {
           <img src={Img8} alt="" className="item-img"></img>
         </div>
         <div className="grid_item">
-        <img src={Img12} alt="" className="item-img"></img>
-        <div className="item-text">
+          <img src={Img12} alt="" className="item-img"></img>
+          <div className="item-text">
             <h3>Vetidos para Niña</h3>
             <p>
-              confeccionamos todo tipo de vestido, nos traes el modelo y el diseño de tus sueños que por solo $70.000 COP se te hara realidad.
+              confeccionamos todo tipo de vestido, nos traes el modelo y el
+              diseño de tus sueños.
+            </p>
+            <p>
+              Por tan solo<b> $70.000 COP</b>.
             </p>
           </div>
         </div>
         <div className="grid_item">
-        <img src={Img13} alt="" className="item-img"></img>
+          <img src={Img13} alt="" className="item-img"></img>
         </div>
         <div className="grid_item">
-        <img src={Img14} alt="" className="item-img"></img>
+          <img src={Img14} alt="" className="item-img"></img>
         </div>
         <div className="grid_item">
           <div className="item-text">
             <h3>Ropa para Mascotas</h3>
+            <p>confeccionamos ropa comoda para su mascota de talla pequeña.</p>
             <p>
-              confeccionamos ropa comoda para su mascota de talla pequeña a tan solo $30.000 COP.
+              Por tan solo<b> $30.000 COP</b>.
             </p>
           </div>
           <p></p>

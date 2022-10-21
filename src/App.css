@@ -19,6 +19,10 @@
   align-items: center;
 }
 
+.leaflet-cotainer {
+  width: 100vw;
+  height: 100vh;
+}
 
 .item {
   background: white;
@@ -234,6 +238,7 @@ span:nth-child(3) {
     column-width: 100%;
   }
 }
+
 .grid_container {
   margin-top: 100px;
   margin-bottom: 5%;
@@ -252,6 +257,37 @@ span:nth-child(3) {
   /*la grilla tendrá por defecto una sola columna*/
   gap: 30px;
   /*la separación entre elementos de la grilla será de 30px*/
+}
+
+.grid_container2 {
+  margin-top: 100px;
+  margin-bottom: 3%;
+  width: 100%;
+  /*toma el 90% del tamaño de la pagina para mostrar los elementos*/
+  max-width: 1000px;
+  /*establece el tamaño máximo en pixeles que podrá tomar este elemento*/
+  margin-left: auto;
+  /*establece los margenes a la izquierda, auto es centrado*/
+  margin-right: auto;
+  /*establece el margen a la derecha, auto es centrado*/
+
+  display: grid;
+  /*Muestra el elemento como una grilla*/
+  grid-template-columns: repeat(1, 1fr);
+  /*la grilla tendrá por defecto una sola columna*/
+  gap: 30px;
+  /*la separación entre elementos de la grilla será de 30px*/
+}
+
+.grid_item2 {
+  background-color: rgba(255, 255, 255, 0.966);
+  cursor: pointer;
+  /*Cuando se pose el cursor sobre el item, este se convertirá de flecha a apuntador*/
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .095);
+  /*El item tendrá un efecto de sombra de 5px de color negro no muy opaco*/
+
+  transition: 300ms;
+  /*el tiempo que toma la transformación del item*/
 }
 
 .grid_item {
@@ -310,6 +346,19 @@ span:nth-child(3) {
   color: rgb(0, 0, 0);
 }
 
+.item-text2 {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Fredoka One';
+  margin-left: auto;
+  margin-right: auto;
+  margin: 10;
+  padding: 10;
+  color: rgb(0, 0, 0);
+  width: 60%;
+  height: 60%;
+}
+
 @media screen and (min-width: 960px) {
 
   /*si el tamaño supera los 960px*/
@@ -317,4 +366,17 @@ span:nth-child(3) {
     grid-template-columns: repeat(3, 1fr);
     /*mi grilla va a mostrar 3 columnas en lugar de 2*/
   }
+}
+
+ul {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Fredoka One', cursive;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 10;
+  padding: 10;
+  color: rgb(0, 0, 0);
+  width: 40%;
+  height: 40%;
 }

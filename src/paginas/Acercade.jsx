@@ -6,9 +6,9 @@ const Acercade = () => {
     <div class="inicio_div">
       <h1> CONFECCIONES ANNY </h1>
       <ul></ul>
-      <div className="grid_container">
-        <div className="grid_item">
-          <div className="item-text">
+      <div className="grid_container2">
+        <div className="grid_item2">
+          <div className="item-text2">
             <h3>Mision</h3>
             <p>
               Confeccionar productos innovadores a la moda y de alta calidad,
@@ -20,9 +20,9 @@ const Acercade = () => {
           </div>
         </div>
       </div>
-      <div className="grid_container">
-        <div className="grid_item">
-          <div className="item-text">
+      <div className="grid_container2">
+        <div className="grid_item2">
+          <div className="item-text2">
             <h3>Vision</h3>
             <p>
               ser una empresa líder de la región y a nivel nacional, reconocida
@@ -122,6 +122,14 @@ const Acercade = () => {
         </ul>
         <ul class="email_me"></ul>
         <b>EMAIL:</b> anacecyats@gmail.com
+        <ul class="ubicacion_me">
+          <b>
+            BARRIO :{" "}
+          </b>{" "}
+          <LinkExternal href="https://maps.app.goo.gl/Uv6J7vnWJafZfqyr9">
+            Barrio Palermo Sur
+          </LinkExternal>{" "}
+        </ul>
       </nav>
     </div>
   );
