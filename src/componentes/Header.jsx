@@ -1,24 +1,17 @@
+import logo from "./logoanny.jpg";
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      {/* <ul class="menu">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Pokemones</a></li>
-      </ul> */}
       <ul class="menu">
         <p></p>
+        <img src={logo} width="115" height="115"></img>
         <li>
           <Link to="inicio">Inicio</Link>
           <hr></hr>
         </li>
         <li>
         <Link to="acercade">Acerca de Confecciones Anny</Link>
-          <hr></hr>
-        </li>
-        <li>
-          <Link to="pokemones">Pokemones</Link>
           <hr></hr>
         </li>
         <li>

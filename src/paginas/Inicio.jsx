@@ -6,43 +6,16 @@ import Img5 from "./img/producto5.png";
 import Img6 from "./img/producto6.png";
 import Img7 from "./img/producto7.png";
 import Img8 from "./img/producto8.png";
+import Img9 from "./img/producto9.png";
+import Img10 from "./img/producto10.png";
+import Img11 from "./img/producto11.png";
+import Img12 from "./img/producto12.png";
+import Img13 from "./img/producto13.png";
+import Img14 from "./img/producto14.png";
+import Img15 from "./img/producto15.png";
 import { Link } from "react-router-dom";
 
 const Inicio = () => {
-  let data = [
-    {
-      id: 1,
-      imgScrs: Img1,
-    },
-    {
-      id: 2,
-      imgScrs: Img2,
-    },
-    {
-      id: 3,
-      imgScrs: Img3,
-    },
-    {
-      id: 4,
-      imgScrs: Img4,
-    },
-    {
-      id: 5,
-      imgScrs: Img5,
-    },
-    {
-      id: 6,
-      imgScrs: Img6,
-    },
-    {
-      id: 7,
-      imgScrs: Img7,
-    },
-    {
-      id: 8,
-      imgScrs: Img8,
-    },
-  ];
   return (
     <div class="inicio_div">
       <nav>
@@ -52,54 +25,124 @@ const Inicio = () => {
           <span>👗👚👙</span>
         </section>
       </nav>
-      <p>
-        Tenemos para damas, caballeros, niñas y niños hermosos vestidos, trajes
-        de baño, blusas, pantalones, ademas se moldea su prenda de acerdo a la
-        necesidad de nuestros clientes, atentos a mejorar continuamente{" "}
-      </p>
-      <li>
-          <Link to="Accordion">accordion</Link>
-          <hr></hr>
-        </li>
+      <b>T</b>enemos para damas, caballeros, niñas y niños hermosos vestidos,
+      trajes de baño, blusas, pantalones, ademas se moldea su prenda de acerdo a
+      la necesidad de nuestros clientes, atentos a mejorar continuamente.
       <h1></h1>
       <ul>
-        <p>
-          Aqui en Confecciones Anny podras Comprar, Moldear y Confeccionar la
-          prenda que deseas{" "}
-        </p>
+        <b>A</b>qui en Confecciones Anny podras Comprar, Moldear y Confeccionar
+        la prenda que deseas.
       </ul>
-      {/* <h1>
-        <img
-          src="https://th.bing.com/th/id/R.f8e3cdeab0edb251a05736a3c2347da0?rik=wX5QpIiXiiKr1w&riu=http%3a%2f%2fwww.imagenesanimadas.net%2fPersonas%2fOjos%2fOjos-66.gif&ehk=RepBkMbs1TMcN89QLBPt3LOmZ16rp9evBGqnyZcftDE%3d&risl=&pid=ImgRaw&r=0"
-          width="120"
-          height="120"
-        />{" "}
-        SIGUE VIENDO{" "}
-      </h1>
-      <p>click en Acerca de para mas informacion</p> */}
-      <>
-        <div className="gallery">
-          {data.map((item, index) => {
-            return (
-              <div className="pics" key={index}>
-                <img src={item.imgScrs} style={{ width: "100%" }} />
-              </div>
-            );
-          })}
+      <></>
+      <div className="grid_container">
+        <div className="grid_item">
+          <div className="item-text">
+            <h3>Tapabocas</h3>
+            <p>
+              Adquiere con nosotros tapabocas a tu medida, detal y al por mayor.
+            </p>
+          </div>
+          <img src={Img1} alt="" className="item-img"></img>
         </div>
-      </>
-      <div className='wrapper'>
-        <div className='accordion'>
-          {data.map((item, i) => {
-            <div className='item'>
-              <div className='title'>
-                <h2>{item.question}</h2>
-              </div>
-              <div className='content'>{item.answer}</div>
-            </div>
-          })}
+        <div className="grid_item">
+          <div className="item-text">
+            <h3>Traje de Baño</h3>
+            <p>
+              Encontraras hermosos trajes de baño que te haran lucir a la moda y
+              son confeccionados con tela de buena calidad a precios asequibles.
+            </p>
+          </div>
+          <img src={Img2} alt="" className="item-img"></img>
         </div>
-      </div>      
+        <div className="grid_item">
+        <img src={Img9} alt="" className="item-img"></img>
+        <div className="item-text">
+            <h3>Traje de Baño para Madre e Hija</h3>
+            <p>
+              aqui te confeccionamos el modelo y diseño que gustes, para que compartan momentos agradables juntas.
+            </p>
+          </div>
+        </div>
+        <div className="grid_item">
+        <img src={Img10} alt="" className="item-img"></img>
+        <div className="item-text">
+            <h3>Traje de Baño para Damas</h3>
+            <p>
+              aqui te confeccionamos el modelo y diseño que gustes con tela de buena calidad por solo $40.000 COP, para que compartan momentos unicos y agradables juntas.
+            </p>
+          </div>
+        </div>
+        <div className="grid_item">
+        <img src={Img11} alt="" className="item-img"></img>
+        <div className="item-text">
+            <h3>Traje de Baño para Damas</h3>
+            <p>
+              aqui te confeccionamos el modelo y diseño que gustes, para que compartan momentos agradables juntas.
+            </p>
+          </div>
+        </div>
+        <div className="grid_item">
+          <div className="item-text">
+            <h3>Enterizos para Bebes</h3>
+            <p>
+              aqui te confeccionamos el modelo y diseño que gustes para tu bebe.
+            </p>
+          </div>
+          <img src={Img3} alt="" className="item-img"></img>
+        </div>
+        <div className="grid_item">
+        <img src={Img4} alt="" className="item-img"></img>
+        </div>
+        <div className="grid_item">
+        <img src={Img5} alt="" className="item-img"></img>
+        </div>
+        <div className="grid_item">
+        <img src={Img6} alt="" className="item-img"></img>
+        </div>
+        <div className="grid_item">
+        <img src={Img7} alt="" className="item-img"></img>
+        <div className="item-text">
+            <h3>Enterizos para Bebes</h3>
+            <p>
+              aqui te confeccionamos el modelo y diseño del vestido que gustes, por solo $40.000 COP
+            </p>
+          </div>
+        </div>
+        <div className="grid_item">
+          <div className="item-text">
+            <h3>Ropa para Niñas</h3>
+            <p>
+              aqui te confeccionamos el modelo y diseño que gustes para niñas.
+            </p>
+          </div>
+          <img src={Img8} alt="" className="item-img"></img>
+        </div>
+        <div className="grid_item">
+        <img src={Img12} alt="" className="item-img"></img>
+        <div className="item-text">
+            <h3>Vetidos para Niña</h3>
+            <p>
+              confeccionamos todo tipo de vestido, nos traes el modelo y el diseño de tus sueños que por solo $70.000 COP se te hara realidad.
+            </p>
+          </div>
+        </div>
+        <div className="grid_item">
+        <img src={Img13} alt="" className="item-img"></img>
+        </div>
+        <div className="grid_item">
+        <img src={Img14} alt="" className="item-img"></img>
+        </div>
+        <div className="grid_item">
+          <div className="item-text">
+            <h3>Ropa para Mascotas</h3>
+            <p>
+              confeccionamos ropa comoda para su mascota de talla pequeña a tan solo $30.000 COP.
+            </p>
+          </div>
+          <p></p>
+          <img src={Img15} alt="" className="item-img"></img>
+        </div>
+      </div>
     </div>
   );
 };

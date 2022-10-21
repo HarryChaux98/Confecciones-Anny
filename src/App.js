@@ -7,7 +7,6 @@ import Body from "./componentes/Body";
 import Footer from "./componentes//Footer";
 import Inicio from "./paginas/Inicio";
 import Acercade from "./paginas/Acercade";
-import Pokemones from "./paginas/Pokemones";
 import Camara from "./paginas/Camara";
 import RecordView from "./paginas/RecordView";
 import "./App.css";
@@ -27,7 +26,6 @@ function App() {
           <Route path="/camara" element={<Camara />} />
           <Route path="/RecordView" element={<RecordView />} />
           <Route path="/Footer" element={<Footer />} />
-          <Route path="/Pokemones" element={<Pokemones />} />
           <Route path="/Header" element={<Header />} />
           <Route path="/Body" element={<Body />} />
         </Routes>

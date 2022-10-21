@@ -1,16 +1,38 @@
+import Img1 from "./img/producto1.png";
 import imagen1 from "./fotoperfil.jpeg";
-import LinkExternal from 'react-link-external';
+import LinkExternal from "react-link-external";
 const Acercade = () => {
   return (
     <div class="inicio_div">
-      <nav>
-        <section>
-          <span>👙👚👗</span>
-          <span>BIENVENIDOS A CONFECCIONES ANNY</span>
-          <span>👗👚👙</span>
-        </section>
-      </nav>
+      <h1> CONFECCIONES ANNY </h1>
       <ul></ul>
+      <div className="grid_container">
+        <div className="grid_item">
+          <div className="item-text">
+            <h3>Mision</h3>
+            <p>
+              Confeccionar productos innovadores a la moda y de alta calidad,
+              satisfaciendo la necesidad de nuestros clientes, ofreciendo buen
+              servicio con excelencia y mejorando continuamente en nuestros
+              procesos para lograr la rentabilidad y crecimiento de nuestra
+              empresa y equipo de trabajo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="grid_container">
+        <div className="grid_item">
+          <div className="item-text">
+            <h3>Vision</h3>
+            <p>
+              ser una empresa líder de la región y a nivel nacional, reconocida
+              por innovación, calidad y buen servicio, generando oportunidades
+              de trabajo a madres cabeza de hogar, destacando sus habilidades,
+              responsabilidad y generando confianza a nuestros clientes{" "}
+            </p>
+          </div>
+        </div>
+      </div>
       <nav>
         <p></p>
         <ul class="name_me">
@@ -46,7 +68,7 @@ const Acercade = () => {
             CORPORACIÓN UNIVERSITARIA MINUTO DE DIOS
           </p>
           <p>
-          <img
+            <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIv9L64WTHU4Z-bEg-P2mI6mSU8QAAVc3DSapvdzuA&s"
               width="28"
               height="28"
@@ -65,19 +87,23 @@ const Acercade = () => {
                 height="18"
               />{" "}
               FACEBOOK:{" "}
-            </b>{" "}<LinkExternal href="https://www.facebook.com/anacecy.pantoja">anacecy.pantoja</LinkExternal>
-            {" "}
+            </b>{" "}
+            <LinkExternal href="https://www.facebook.com/anacecy.pantoja">
+              anacecy.pantoja
+            </LinkExternal>{" "}
           </ul>
           <ul>
             <b>
-            <img
+              <img
                 src="https://www.freepnglogos.com/uploads/instagram-icon-png/instagram-icon-buddha-quotes-that-can-change-your-life-gabriela-green-24.png"
                 width="18"
                 height="18"
               />{" "}
               INSTAGRAM:{" "}
             </b>{" "}
-            <LinkExternal href="https://instagram.com/anacecy.pantoja?igshid=YmMyMTA2M2Y=">anacecy.pantoja</LinkExternal>{" "}
+            <LinkExternal href="https://instagram.com/anacecy.pantoja?igshid=YmMyMTA2M2Y=">
+              anacecy.pantoja
+            </LinkExternal>{" "}
           </ul>
         </ul>
         <ul class="contacto_me">
@@ -94,7 +120,6 @@ const Acercade = () => {
             3104159259{" "}
           </ul>
         </ul>
-
         <ul class="email_me"></ul>
         <b>EMAIL:</b> anacecyats@gmail.com
       </nav>
