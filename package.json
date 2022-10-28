@@ -19,6 +19,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-geolocation": "^1.0.4",
+    "react-google-map-picker": "^1.2.3",
     "react-image-gallery": "^1.2.11",
     "react-leaflet": "^4.1.0",
     "react-link-external": "^1.0.1",

@@ -1,0 +1,382 @@
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.texto {
+  color: white;
+  text-align: center;
+  margin: 300px 0;
+  font-size: 28px;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaflet-cotainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.item {
+  background: white;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+}
+
+.title {
+  color: #85662b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  color: black;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #00000000;
+  /* min-height: 200vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* background-image: url("https://fondosmil.com/fondo/20890.jpg"); */
+  background-image: linear-gradient(135deg, #c704ee, hsla(64, 86%, 68%, 0.995), #a5ec75, #07faee, #659af7, #f46492, #fa82b0);
+  background-size: 500%;
+  animation: fonanimado 10s infinite;
+}
+
+nav {
+  margin: 0;
+  width: 100%;
+  height: 80;
+  background-color: #00000000;
+  /* display: flex;
+justify-content: center; */
+  align-items: center;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-decoration-color: rgb(228, 11, 11);
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 25;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Centrartexto {
+  text-align: left;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  background: #092327;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display: block;
+}
+
+.menu li {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a:hover {
+  background: #ef8354;
+}
+
+p {
+  margin: 0 0 0.5em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+section {
+  height: 200px;
+  width: center;
+
+}
+
+span {
+  font-size: 40px;
+  font-family: 'Fredoka One', cursive;
+  animation: saltar 1s infinite;
+  animation-timing-function: cubic-bezier(0, .82, .44, .99);
+  display: inline-block;
+  transform: translatey(0);
+}
+
+span:nth-child(1) {
+  animation-delay: 0;
+}
+
+span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+span:nth-child(3) {
+  animation-delay: 0;
+}
+
+
+.crs {
+  color: none;
+  height: 80px;
+  width: 450px;
+}
+
+.App-link {
+  color: #08df2c;
+}
+
+@keyframes saltar {
+  0% {
+    transform: translatey(0);
+  }
+
+  10% {
+    transform: translatey(-10px);
+  }
+
+  50% {
+    transform: translatey(100px);
+  }
+
+  80% {
+    transform: translatey(110px);
+  }
+}
+
+@keyframes fonanimado {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding: 0 12px;
+}
+
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+@media (max-width:991px) {
+  .gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width:480px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+.grid_container {
+  margin-top: 100px;
+  margin-bottom: 5%;
+  width: 100%;
+  /*toma el 90% del tamaño de la pagina para mostrar los elementos*/
+  max-width: 1000px;
+  /*establece el tamaño máximo en pixeles que podrá tomar este elemento*/
+  margin-left: auto;
+  /*establece los margenes a la izquierda, auto es centrado*/
+  margin-right: auto;
+  /*establece el margen a la derecha, auto es centrado*/
+
+  display: grid;
+  /*Muestra el elemento como una grilla*/
+  grid-template-columns: repeat(2, 1fr);
+  /*la grilla tendrá por defecto una sola columna*/
+  gap: 30px;
+  /*la separación entre elementos de la grilla será de 30px*/
+}
+
+.grid_container2 {
+  margin-top: 100px;
+  margin-bottom: 3%;
+  width: 100%;
+  /*toma el 90% del tamaño de la pagina para mostrar los elementos*/
+  max-width: 1000px;
+  /*establece el tamaño máximo en pixeles que podrá tomar este elemento*/
+  margin-left: auto;
+  /*establece los margenes a la izquierda, auto es centrado*/
+  margin-right: auto;
+  /*establece el margen a la derecha, auto es centrado*/
+
+  display: grid;
+  /*Muestra el elemento como una grilla*/
+  grid-template-columns: repeat(1, 1fr);
+  /*la grilla tendrá por defecto una sola columna*/
+  gap: 30px;
+  /*la separación entre elementos de la grilla será de 30px*/
+}
+
+.grid_item2 {
+  background-color: rgba(255, 255, 255, 0.966);
+  cursor: pointer;
+  /*Cuando se pose el cursor sobre el item, este se convertirá de flecha a apuntador*/
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .095);
+  /*El item tendrá un efecto de sombra de 5px de color negro no muy opaco*/
+
+  transition: 300ms;
+  /*el tiempo que toma la transformación del item*/
+}
+
+.grid_item {
+  background-color: white;
+  cursor: pointer;
+  /*Cuando se pose el cursor sobre el item, este se convertirá de flecha a apuntador*/
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .095);
+  /*El item tendrá un efecto de sombra de 5px de color negro no muy opaco*/
+
+  transition: 300ms;
+  /*el tiempo que toma la transformación del item*/
+}
+
+.grid_item::after {
+  /*Es un pseudoelemento que se muestra después de su padre, no es un elemento real, solo algo que se muestra*/
+  content: "";
+  /*es necesario crear contenido para el after, este no se puede tocar como tal, solo es algo que se muestra*/
+  background-color: rgba(179, 229, 252, .1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /*Es la posición respecto a los bordes del bloque que lo contiene*/
+  top: 0;
+  /*se ubica en 0 desde arriba*/
+  left: 0;
+  /*se ubica en 0 desde la izquierda*/
+  transform: scale(0);
+  /*el after tiene una escala de 0, por lo que no se ve por ser muy pequeño*/
+  transition: all 150ms;
+  /*es el tiempo que se toma el after en transformarse*/
+  opacity: 0;
+  /*el after tiene una opacidad de 0 por lo que es transparente*/
+}
+
+.grid_item:hover::after {
+  opacity: 1;
+  /*al pasar el mouse por encima del elemento, el after se activa cambiando su opacidad de 0 a 1*/
+  transform: scale(1);
+  /*y su escala también pasa de 0 a 1, por lo que se ve un efecto de algo de color rgba(179, 229, 252, .1) que crece desde el centro del item*/
+}
+
+.grid_item:hover {
+  transform: scale(1.07);
+  /*Cuando se pasa el mouse por encima del item, este crece desde una escala de 1 a 1.07 con un tiempo de 300ms*/
+}
+
+.item-img {
+  max-width: 100%;
+  /*La imagen puede ocupar el 100% del espacio del bloque que la contiene*/
+  display: block;
+  /*La imagen se muestra en bloque*/
+}
+
+.item-text {
+  padding: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.item-text2 {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Fredoka One';
+  margin-left: auto;
+  margin-right: auto;
+  margin: 10;
+  padding: 10;
+  color: rgb(0, 0, 0);
+  width: 60%;
+  height: 60%;
+}
+
+@media screen and (min-width: 960px) {
+
+  /*si el tamaño supera los 960px*/
+  .grid_container {
+    grid-template-columns: repeat(3, 1fr);
+    /*mi grilla va a mostrar 3 columnas en lugar de 2*/
+  }
+}
+
+ul {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Fredoka One', cursive;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 10;
+  padding: 10;
+  color: rgb(0, 0, 0);
+  width: 40%;
+  height: 40%;
+}
