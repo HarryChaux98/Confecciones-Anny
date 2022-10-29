@@ -352,7 +352,7 @@ span:nth-child(3) {
   font-family: 'Fredoka One';
   margin-left: auto;
   margin-right: auto;
-  margin: 10;
+  margin: auto;
   padding: 10;
   color: rgb(0, 0, 0);
   width: 60%;
@@ -374,7 +374,7 @@ ul {
   font-family: 'Fredoka One', cursive;
   margin-left: auto;
   margin-right: auto;
-  margin: 10;
+  margin: auto;
   padding: 10;
   color: rgb(0, 0, 0);
   width: 40%;
