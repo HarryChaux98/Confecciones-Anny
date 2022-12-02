@@ -1,36 +1,31 @@
-import { useState } from "react";
-import Webcam from "react-webcam";
+import { useRef } from 'react';
+import { useLoader } from '@react-three/fiber';
+import { TextureLoader } from 'three';
+import {
+ FaceBufferGeometry, FaceTracker, ZapparCamera, ZapparCanvas,BrowserCompatibility
+} from '@zappar/zappar-react-three-fiber';
 
-const videoConstraints = {
-  width: 1280,
-  height: 720,
-  facingMode: "user",
+function FaceMeshMaterial() {
+  const faceMapTexture = useLoader(TextureLoader, new URL('./assets/faceMeshTemplate.png', import.meta.url).href);
+  return <meshStandardMaterial transparent map={faceMapTexture} color="white" />;
 };
 
-const WebcamCapture = () => {
-  const [cameraSRC, setImage] = useState("");
-
+function Camara(){
+  const faceTrackerGroup = useRef();
   return (
     <>
-      <Webcam
-        audio={false}
-        height={720}
-        screenshotFormat="image/jpeg"
-        width={1280}
-        videoConstraints={videoConstraints}
-      >
-        {({ getScreenshot }) => (
-          <button
-            onClick={() => {
-              setImage(getScreenshot());
-            }}
-          >
-            Capture photo
-          </button>
-        )}
-      </Webcam>
-      <img src={cameraSRC} />
+      <BrowserCompatibility fallback={<div>Sorry!</div>} />
+      <ZapparCanvas>
+        <ZapparCamera/>
+        <FaceTracker ref={faceTrackerGroup}>
+          <mesh>
+            <FaceBufferGeometry attach="geometry" trackerGroup={faceTrackerGroup} />
+            <FaceMeshMaterial />
+          </mesh>
+        </FaceTracker>
+        <directionalLight position={[2.5, 8, 5]} intensity={1.5} />
+      </ZapparCanvas>
     </>
   );
 };
-export default WebcamCapture;
+export default Camara;
