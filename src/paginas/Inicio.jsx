@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 
 const Inicio = () => {
   return (
-    <div class="inicio_div">
+    <div className="inicio_div">
       <nav>
         <section>
           <span>👙👚👗</span>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <ul class="menu">
+      <ul className="menu">
         <p></p>
         <img src={logo} width="115" height="115"></img>
         <li>

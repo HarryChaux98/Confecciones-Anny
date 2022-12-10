@@ -3,7 +3,7 @@ import imagen1 from "./fotoperfil.jpeg";
 import LinkExternal from "react-link-external";
 const Acercade = () => {
   return (
-    <div class="inicio_div">
+    <div className="inicio_div">
       <h1> CONFECCIONES ANNY </h1>
       <ul></ul>
       <div className="grid_container2">
@@ -35,13 +35,13 @@ const Acercade = () => {
       </div>
       <nav>
         <p></p>
-        <ul class="name_me">
+        <ul className="name_me">
           <b>NOMBRE:</b> ANA CECILIA PANTOJA
         </ul>
-        <ul class="ocupation_me">
+        <ul className="ocupation_me">
           <b>OCUPACION:</b> CONTADORA PUBLICA & COSTURERA
         </ul>
-        <ul class="age_me">
+        <ul className="age_me">
           <b>EDAD:</b> 40 AÑOS
         </ul>
         <ul>
@@ -57,7 +57,7 @@ const Acercade = () => {
       <ul></ul>
       <h1>PRESENTACION ACADEMICA</h1>
       <nav>
-        <ul class="estudio_me">
+        <ul className="estudio_me">
           <b>ESTUDIOS: </b>
           <p>
             <img
@@ -76,7 +76,7 @@ const Acercade = () => {
             INSTITUCIÓN EDUCATIVA SANTA MARÍA GORETTI
           </p>
         </ul>
-        <ul class="sigueme_me">
+        <ul className="sigueme_me">
           <b>SIGUEME EN:</b>
           <p></p>
           <ul>
@@ -106,7 +106,7 @@ const Acercade = () => {
             </LinkExternal>{" "}
           </ul>
         </ul>
-        <ul class="contacto_me">
+        <ul className="contacto_me">
           <b>PARA MAS INFORMACION: </b>
           <h1></h1>
           <ul>
@@ -125,7 +125,7 @@ const Acercade = () => {
             </b> anacecyats@gmail.com
           </ul>
         </ul>
-        <ul class="ubicacion_me">
+        <ul className="ubicacion_me">
           <b>
             BARRIO :{" "}
           </b>{" "}
